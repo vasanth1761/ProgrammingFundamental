@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 
 public class BankDetailsMain {
 
-	 public void deposit(long accountnumber,long amount,long mobileno)
+	 public void deposit(long accountnumber,double amount,long mobileno)
 	 {
 		 
 		 System.out.println("ACC.  "+accountnumber + "  RS."   +amount+ "  PH" +mobileno);

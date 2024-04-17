@@ -5,7 +5,7 @@ public class ABCBank {
  
 		// TODO Auto-generated method stub
 		long accountnumber;
-		long amount;
+		double amount;
 		long mobileno;
 	    String name;
 		String ifsc;
@@ -21,10 +21,10 @@ public class ABCBank {
 		public void setAccountnumber(long accountnumber) {
 			this.accountnumber = accountnumber;
 		}
-		public long getAmount() {
+		public double getAmount() {
 			return amount;
 		}
-		public void setAmount(long amount) {
+		public void setAmount(double amount) {
 			this.amount = amount;
 		}
 		public long getMobileno() {

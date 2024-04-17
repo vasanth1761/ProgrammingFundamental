@@ -11,7 +11,7 @@ public class BankVerification {
 	
 		// TODO Auto-generated method stub
       long accountnumber;
-	  System.out.println("Enter the account number");
+	  System.out.print("Enter the account number");
 	  accountnumber=sc.nextLong();
 	  while(true)
 	  
@@ -21,15 +21,15 @@ public class BankVerification {
 	  }
 	  else
 	  {
-		  System.out.println("Enter the valid data");
+		  System.out.print("Enter the valid data");
 		  accountnumber=sc.nextLong();
 	  }
 	  bank.setAccountnumber( accountnumber);
 	  
 	  
 	  
-	  long amount;
-	  System.out.println("Enter the amount");
+	  double amount;
+	  System.out.print("Enter the amount");
 	  amount=sc.nextLong();
 	  while(true)
 		  
@@ -39,7 +39,7 @@ public class BankVerification {
 	  }
 	  else
 	  {
-		  System.out.println("Enter the valid data");
+		  System.out.print("Enter the valid data");
 		  amount=sc.nextLong();
 	  }
 	  bank.setAmount(amount);
@@ -55,7 +55,7 @@ public class BankVerification {
 	  }
 	  else
 	  {
-		  System.out.println("Enter the valid data");
+		  System.out.print("Enter the valid data");
 		  mobileno=sc.nextLong();
 	  }
      bank.setMobileno(mobileno);
@@ -117,17 +117,28 @@ public class BankVerification {
 	  }
 	  bank.setBankname(bankname);
 	  
+	//  Classb c=new Classb();
+	 // c.deposit(b.get);
+	  
+	  
 	  BankDetailsMain b=new BankDetailsMain();
-	  b.deposit(bank.getAccountnumber(),bank.getAmount(),bank.getMobileno());
-	  b.deposit(bank.getName(),bank.getMobileno(),bank.getAmount());
-	  b.deposit(bank.getIfsc(),bank.getLocation(),bank.getBankname());
-	  b.deposit(bank.getAmount());
+	  Classb cd=new Classb();
+//	  cd.deposit(bank.getAmount());
 	  
 	 
 	  
-	}
+	  
+	  b.deposit(bank.getAccountnumber(),bank.getAmount(),bank.getMobileno());
+	  b.deposit(bank.getName(),bank.getMobileno(),bank.getAmount());
+	  b.deposit(bank.getIfsc(),bank.getLocation(),bank.getBankname());
+//	  b.deposit(bank.getAmount());
+	 
+	  cd.deposit(bank.getAmount());
+	  
+	  
 
 
 		// TODO Auto-generated method stub
 		
 	}
+}
